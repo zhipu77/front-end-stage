@@ -1,14 +1,3 @@
-# 版本号记录
-	
-	版本 	1.0.0
-	MD5		3f80472424
-	说明		第一版本，包括仪表盘、五维图、分享、反馈、反馈等功能
-
-	版本 	1.0.1
-	MD5		5a10a902f4
-	说明		第一版本，包括仪表盘、五维图、分享、反馈、反馈等功能
-
-# 域名
 
 
 # 资料
@@ -16,25 +5,6 @@
 
 https://localhost:10000/h5/index
 
-# nginx
-
-	server {
-        listen       10000;
-        server_name  grcredit.vip.com;
-
-        location /testapi {
-           proxy_pass http://test/testapi;
-           proxy_set_header Host $host;
-           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
-
-        location / {
-           proxy_pass http://127.0.0.1:9000;
-           proxy_set_header Host $host;
-           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
-    }
-    
 
 ————————————————————————————————————————————————————————————————————————————————————
 ## 使用的技术 

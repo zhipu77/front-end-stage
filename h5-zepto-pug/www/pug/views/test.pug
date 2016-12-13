@@ -1,0 +1,15 @@
+extends ../layout/layout.pug
+block title
+	title test
+block pageStyle
+	link(href=`${assetsPath}/css/test.css` rel='stylesheet' type='text/css')
+
+block content 
+	h1 this is test page
+	#protocol-container(style="background-color:pink") test
+	.creditFooter(style="background-color:yellow;height:20px") bottom height20px
+block pageScript
+	if isDev
+		script(src=`/static/test.bundle.js` type='text/javascript')
+	else
+		script(src=`${assetsPath}/js/test.bundle.js` type='text/javascript') 

@@ -1,0 +1,40 @@
+.message-overlay {
+	ul {
+		list-style-type: none;
+		-webkit-padding-start: 0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+
+		li {
+			&:last-child {
+				border-bottom: 0;
+			}
+			padding: .12rem 0.15rem;
+			min-width: 1.3rem;
+			border-bottom: solid @grey-line 0.01rem;
+			&.red:after {
+				position: relative;
+    			top: 2px;
+				content: '•';
+			    color: @red-base;
+			    margin-left: 6px;
+			    font-size: 20px;
+			    height: 0.1rem;
+			    display: inline-block;
+			    line-height: 0.1rem;
+			}
+		}
+	}
+	.content {
+		position: absolute;
+		top: 0.05rem;
+		right: 0.15rem;
+		background: white;
+		text-align: left;
+		border-radius: 0.02rem;
+		display: inline-block;
+		font-size: 0.15rem;
+	}
+}
